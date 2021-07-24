@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    line-height: 1.6;
+    background: #333;
+    overflow: hidden;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+ .menu{
+    text-align: center;
+    padding: 10px 10px;
+    background: black;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 40px;
+    width: 100% ;
+    
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+}
+.menu a:hover{
+    color: sandybrown;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+section h1{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+section h3{
+    font-size: 23px;
+    text-transform: capitalize;
+}
+section p{
+    font-size: 20px;
+}
+section a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: sandybrown;
+    border: 3px solid steelblue;
+    padding: 5px 5px;
+    margin-top: 10px;
+    scroll-snap-align: center;
+}
+section a:hover{
+    color: white;
+    letter-spacing: 5px;
+}
+section#header{
+    background-image: url(home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+section#tech{
+    background-image: url(tech.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+section#science{
+    background-image: url(science.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+section#wild-life{
+    background-image: url(wild-life.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
